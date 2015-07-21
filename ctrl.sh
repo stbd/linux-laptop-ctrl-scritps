@@ -6,9 +6,18 @@ function usage()
     echo "-b - print battery state"
     echo "-v [mode] - set video mode"
     printf "\t0 - use only laptop screen\n"
-    printf "\t1 - use secondary screen with auto resolution\n"
-    printf "\t2 - use seoncdary screen with selected resolution\n"
-
+    printf "\t1 - dual screen with auto resolution\n"
+    printf "\t2 - dual screen with custom settings for TV\n"
+    printf "\t2 - dual screen with custom settings for extern screen\n"
+    printf "\t? - xrand info\n"
+    echo "-a [mode] - set audio mode"
+    printf "\ts - audio forwarded to speakers\n"
+    printf "\th - audio forwarded to HDMI\n"
+    printf "\t[+/-][percentage] - increase/decrease volume with percentage\n"
+    echo "-l[+/-] - increase/decrese brightness"
+    echo "-s - suspend (memory)"
+    echo "-h - hibernate (disk)"
+    echo "-x - lock screen"
 }
 
 function print-battery-state()
